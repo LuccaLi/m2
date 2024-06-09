@@ -1,0 +1,273 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.body{
+    font-family: Noto sans;
+    line-height: 1.5px;
+}
+
+header{
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.content{
+    max-width: 1296px;
+    margin: auto;
+}
+
+.head-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    position: relative;
+}
+
+@media (max-width: 768px){
+    .head-content{
+        justify-content: end;
+    }
+}
+
+.head-content ul{
+    display: flex;
+    gap: 40px;
+}
+
+@media (max-width: 768px){
+    .head-content ul{
+        display: none;
+    }
+}
+
+.head-content ul li{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.logo{
+    position: absolute;
+    left: 0px;
+}
+
+.menu{
+    display: none;
+}
+
+@media (max-width: 768px){
+    .menu{
+        display: block;
+    }
+}
+
+.banner{
+    text-align: center;
+    padding: 80px;
+}
+
+.banner-2b2c{
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+    row-gap: 8px;
+}
+
+.banner-bc h3{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.banner-bc p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.banner-content{
+    padding: 59px 71px;
+}
+
+.banner-content h2{
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 1.2;
+        color: #1e1e1e;
+}
+
+.quote{
+    width: 72px;
+}
+
+.quote-left{
+    align-self: self-start;
+}
+.quote-right{
+    align-self: self-end;
+}
+
+.list{
+    width: 100%;
+    max-width: 1296px;
+    margin: 0 auto;
+    padding: 120px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card{
+    width: 49%;
+}
+.list img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.head{
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 2%;
+}
+.mid{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 2%;
+    color: #919191;
+}
+.foot{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 323px;
+}
+.foot p{
+    background-color: #f1f1f1;
+    width: 88px;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 16px;
+    font-size: 16px;
+}
+
+@media (max-width: 768px){
+    .card{
+        width: 100%;
+    }
+}
+
+.footer{
+    width: 1296px;
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0px;
+    align-items: center;
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-lg.png?raw=true);
+}
+
+@media (max-width: 768px){
+    .footer{
+        flex-direction: column;
+        row-gap: 40px;
+        align-items: center;
+        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-sm.png?raw=true);
+    }
+}
+
+.link{
+    display: flex;
+    flex-direction: column;
+    padding: 80px;
+    align-items: center;
+    row-gap: 24px;
+}
+
+.link a{
+    text-decoration: none;
+    color: black;
+}
+
+.contract{
+    row-gap: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contract img{
+    width: 120px;
+    height: 54px;
+}
+
+.contract p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.mail{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #919191; 
+}
+
+.link a{
+    padding: 8px 24px;
+    border: 1px solid #c1c1c1;
+    width: 306px;
+    background-color: white;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+}
+
+.link .active{
+    background-color: black;
+    color: white;
+}
+
