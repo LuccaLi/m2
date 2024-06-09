@@ -199,7 +199,6 @@ header{
 }
 
 .footer{
-    width: 1296px;
     display: flex;
     justify-content: space-between;
     padding: 80px 0px;
